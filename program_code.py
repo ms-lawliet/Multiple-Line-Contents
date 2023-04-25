@@ -7,6 +7,13 @@
 # Enter line: Simple is better than complex.
 # Are there more lines y/n? n
 
+from colorama import Back
+
+# create list of colors for font
+cyan = '\033[96m'
+blue = '\033[94m'
+
+
 def multiple_lines():
     # open text file
     with open('mylife.txt', 'a') as file:
