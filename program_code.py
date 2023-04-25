@@ -10,17 +10,22 @@
 def multiple_lines():
     # open text file
     with open('mylife.txt', 'a') as file:
-        # ask user for input
-        enter = input('Enter line: ')
-        # write input into mylife.txt
-        file.write(f'Enter line: {enter}')
-        # ask if there is more
-        count = input('Are there more lines y/n? ')
-        file.write(f'Are there more lines y/n? {count}\n')
-        # if no (n),
-        # stop execution
-        # if yes (y),
-        # ask user for another input
+        while True:
+            # ask user for input
+            enter = input('Enter line: ')
+            # write input into mylife.txt
+            file.write(f'Enter line: {enter}\n')
+            # ask if there are more
+            count = input('Are there more lines y/n? ')
+            file.write(f'Are there more lines y/n? {count}\n')
+            # if no (n),
+            if count == 'n':
+                # stop execution
+                break
+            # if yes (y),
+            else:
+                # ask user for another input
+                continue
 
 
 multiple_lines()
