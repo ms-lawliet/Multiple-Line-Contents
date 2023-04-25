@@ -19,11 +19,12 @@ def multiple_lines():
     with open('mylife.txt', 'a') as file:
         while True:
             # ask user for input
-            enter = input('Enter line: ')
+            enter = input(Back.BLACK + f'{cyan}Enter line: ')
             # write input into mylife.txt
             file.write(f'Enter line: {enter}\n')
             # ask if there are more
-            count = input('Are there more lines y/n? ')
+            count = input(f'{blue}Are there more lines y/n? ')
+            # write input into mylife.txt
             file.write(f'Are there more lines y/n? {count}\n')
             # if no (n),
             if count == 'n':
