@@ -10,9 +10,10 @@
 def multiple_lines():
     # open text file
     with open('mylife.txt', 'a') as file:
-        print('a')
         # ask user for input
-        # wwrite input into mylife.txt
+        enter = input('Enter line: ')
+        # write input into mylife.txt
+        file.write(f'Enter line: {enter}')
         # ask if there is more
         # if no (n),
         # stop execution
