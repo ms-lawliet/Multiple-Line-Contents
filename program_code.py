@@ -15,6 +15,8 @@ def multiple_lines():
         # write input into mylife.txt
         file.write(f'Enter line: {enter}')
         # ask if there is more
+        count = input('Are there more lines y/n? ')
+        file.write(f'Are there more lines y/n? {count}\n')
         # if no (n),
         # stop execution
         # if yes (y),
