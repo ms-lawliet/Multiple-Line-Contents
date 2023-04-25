@@ -7,11 +7,17 @@
 # Enter line: Simple is better than complex.
 # Are there more lines y/n? n
 
-# open text file
-# ask user for input
-# wwrite input into mylife.txt
-# ask if there is more
-# if no (n),
-# stop execution
-# if yes (y),
-# ask user for another input
+def multiple_lines():
+    # open text file
+    with open('mylife.txt', 'a') as file:
+        print('a')
+        # ask user for input
+        # wwrite input into mylife.txt
+        # ask if there is more
+        # if no (n),
+        # stop execution
+        # if yes (y),
+        # ask user for another input
+
+
+multiple_lines()
